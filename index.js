@@ -14,11 +14,12 @@ mongoose.connect(process.env.Mongo_url)
   console.log("succussfull")
 })
 .catch((error)=>{
-  console.log("error")
+  console.log("mongooseerror")
 })
 
-app.use("/employees",staffRoutes)
+app.use("/staffs",staffRoutes)
 app.use("/students",studentRoutes)
 app.listen(PORT,()=>{
   console.log("server started and running at 5000")
+ 
 })
