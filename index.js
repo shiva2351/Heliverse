@@ -7,6 +7,10 @@ const studentRoutes=require("./routes/studentRoutes")
 
 const app =express()
 app.use(bodyParser.json())
+
+app.get('/',(req,res)=>{
+  res.send('server is ready');
+});
 const PORT=process.env.PORT || 3000
 dotEnv.config()
 mongoose.connect(process.env.Mongo_url)
