@@ -1,10 +1,11 @@
 const express = require("express");
 const dotEnv=require("dotenv")
+var cors = require('cors')
 const mongoose=require("mongoose")
 const bodyParser=require("body-parser")
 const staffRoutes=require("./routes/staffRoutes")
 const studentRoutes=require("./routes/studentRoutes")
-
+app.use(cors())
 const app =express()
 app.use(bodyParser.json())
 
