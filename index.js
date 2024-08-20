@@ -9,7 +9,7 @@ app.use(cors())
 const app =express()
 app.use(bodyParser.json())
 
-app.get('/',(req,res)=>{
+app.get('/f',(req,res)=>{
   res.send('server is ready');
 });
 const PORT=process.env.PORT || 3000
