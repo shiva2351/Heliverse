@@ -8,8 +8,13 @@ const studentRoutes=require("./routes/studentRoutes")
 
 const app =express()
 app.use(bodyParser.json())
+<<<<<<< HEAD
 app.use(cors())
 app.get('/',(req,res)=>{
+=======
+
+app.get('/f',(req,res)=>{
+>>>>>>> e0ada2d0220e47342c73c4665a14d75c808eb10b
   res.send('server is ready');
 });
 const PORT=process.env.PORT || 3000
